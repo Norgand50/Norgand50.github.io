@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Trivium - Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>Contact Information</h1>
+ <fieldset class="inform">
+<legend class="inform">Enter your personal information to be a fan club member:</legend>
+<form  name="myForm" onsubmit="return validateForm();" style="font-size: 20px;">
+	Nickname:<input class="inform" type="text" style="margin-left: 18px; padding-right: 100px;"><br><br>
+	First Name:<input class="inform" type="text" style="margin-left: 10px; padding-right: 100px;"><br><br>
+	Last Name:<input class="inform" type="text" style="margin-left: 10px; padding-right: 100px;"><br><br>
+	E-Mail:<input class="informEmail" type="email" name="email"><br><br>
+	<input class="inform" type="radio" name="gender" value="male" checked> Male
+	<input class="inform" type="radio" name="gender" value="female"> Female<br><br><br>
+	Additional Information<br>
+	<textarea class="inform" style="resize: none;" rows="4" cols="50"></textarea><br><br>
+	<button type="submit">Submit</button> <button type="reset">Clear</button>
+</fieldset>
+</form>
+<p style="font-size: 20px;">Contact with us in the e-mail below:<br>
+<a href="mailto:christoforoudimitris2@gmail.com?Subject=Hello%20again" target="_top">christoforoudimitris2@gmail.com</a>
+</p>
+</div>
+
+<script>
+function validateForm() {
+	var x = document.forms["myForm"]["email"].value;
+	var atpos = x.indexOf("@");
+	var dotpos = x.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+		alert("Not a valid e-mail address");
+		return false;
+	}
+	else{
+		alert("Your Informations Has Register");
+		return true;
+	}
+}
+	
+</script>
+
+<footer>
+	<p id = "footerLeft">&copy;2018 - All Rights Reserved, Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>

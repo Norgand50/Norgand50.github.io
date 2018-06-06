@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>Trivium - The Sin And The Sentence</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>The Sin and the Sentence (2017)</h1>
+<img id="myImg" class="myImg" src="Images/The Sin and the Sentence.jpg" alt="The Sin and the Sentence" width="200px" height="200px" style="padding-bottom: 10px; padding-right: 1%;" />
+<p>1.	"The Sin and the Sentence"	5:49<br>
+2.	"Beyond Oblivion"	5:17<br>
+3.	"Other Worlds"	4:50<br>
+4.	"The Heart from Your Hate"	4:04<br>
+5.	"Betrayer"	5:27<br>
+6.	"The Wretchedness Inside"	5:32<br>
+7.	"Endless Night"	3:38<br>
+8.	"Sever the Hand"	5:26<br>
+9.	"Beauty in the Sorrow"	4:31<br>
+10.	"The Revanchist"	7:17<br>
+11.	"Thrown into the Fire"	5:29
+</p><br><br>
+<h1>Album Informations</h1>
+<p>
+Following the release of Silence in the Snow, then drummer Mat Madiro left the band. An established touring drummer Paul Wandtke took Madiro's place in Trivium. In January 2017, rumors began to circulate which suggested that Wandtke would be leaving the band and would be replaced by Alex Bent. After a short time, both parties would confirm Wandtke's departure from the band as well as Bent's involvement with them.
+
+In late July 2017, The band began releasing teasers online with cryptic images, lyrical passages, and video clips, with the accompanying Roman numeral "VIII.I". This would later be confirmed as representing August 1, the release date for a new single, "The Sin and the Sentence", with both the song and accompanying music video featuring Bent on drums. A second series of online teasers by the band would come just a few weeks afterwards, utilizing similar cryptic video clips with accompanying lyrical passages. This led to the eventual release of a second single, titled "The Heart from Your Hate". The song was first premiered exclusively on Octane on August 23. The next day, the band released both the song and a music video worldwide, as well as the track listing and release date for their eighth album, titled The Sin and the Sentence, on which both singles would be featured.
+
+The song "The Wretchedness Inside" is taken from a demo Heafy ghostwrote for a different band in 2014. The song was never used, so the band re-recorded the song which appeared on The Sin and the Sentence instead.
+
+In an interview with hardDrive, Heafy stated that the working title for the album was "The Revanchist" and that the album was going to have gold and neon colors, however those plans were changed once Heafy's wife, Ashley, presented the band with symbols for each accompanying song. The band then decided to use that artwork instead.
+</p>
+</div>
+
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+
+window.onload = function() {
+var modal = document.getElementById('myModal');
+
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+}
+</script>
+
+<footer>
+	<p id = "footerLeft">&copy;2018 - All Rights Reserved, Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>

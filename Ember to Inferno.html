@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>Trivium - Ember To Inferno</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>Ember to Inferno(2003)</h1>
+<img id="myImg" class="myImg" src="Images/ember to inferno.jpg" alt="Ember to Inferno" width="200px" height="200px" style="padding-bottom: 10px; padding-right: 1%;" />
+<p style="text-align:center;">1.	"Inception: the Bleeding Skies" (instrumental)	0:35<br>
+	2.	"Pillars of Serpents"	4:35<br>
+	3.	"If I Could Collapse the Masses"	4:42<br>
+	4.	"Fugue (A Revelation)"	4:21<br>
+	5.	"Requiem"	4:53<br>
+	6.	"Ember to Inferno"	4:11<br>
+	7.	"Ashes" (instrumental)	0:53<br>
+	8.	"To Burn the Eye"	7:01<br>
+	9.	"Falling to Grey"	5:37<br>
+	10.	"My Hatred"	4:34<br>
+	11.	"When All Light Dies"	6:23<br>
+	12.	"A View of Burning Empires" (instrumental)		1:48
+	</p><br><br>
+	<h1>Album Informations</h1>
+	<p>This album is the final release by the band with former bassist Brent Young. Frontman Matt Heafy was 17 years old when the album was written and recorded.
+
+Corey Beaulieu toured in support of the album, but did not play on the album according to the re-release booklet.
+
+The 2004 reissue of the album includes early versions of "The Deceived" and "Blinding Tears Will Break the Skies". Both songs were re-recorded for Ascendancy, with the latter appearing only on the 2006 special edition. "Demon" is taken from the Trivium EP.
+
+"Inception: the Bleeding Skies" is "A View of Burning Empires" played in reverse.
+
+On December 2, 2014 it was announced by Matt Heafy on Twitter that Ember to Inferno would be re-released again with new artwork along with the band's early demo EPs. The re-release was officially revealed on October 14, 2016, via Trivium's Facebook page. It was released on December 2, 2016, two years after the initial announcement by Heafy. The re-release is dubbed Ab Initio, Latin for "From the Beginning".
+
+"Pillars of Serpents" was re-recorded by Trivium for their 2017 album The Sin and the Sentence. Titled "Pillars of Serpents '17", it was included as a bonus track exclusively on the Japanese edition of the album.
+	</p>
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+window.onload = function() {
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+}
+</script>
+
+<footer>
+	<p id = "footerLeft">&copy;2018 - All Rights Reserved, Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>

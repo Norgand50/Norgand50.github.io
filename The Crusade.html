@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>Trivium - The Crusade</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>The Crusade(2006)</h1>
+<img id="myImg" class="myImg" src="Images/The Crusade.jpg" alt="The Crusade" width="200px" height="200px" style="padding-bottom: 10px; padding-right: 1%;" />
+<p>1.	"Ignition"	Heafy	3:54<br>
+2.	"Detonation"	Heafy	4:28<br>
+3.	"Entrance of the Conflagration"	Heafy	4:35<br>
+4.	"Anthem (We Are the Fire)"	Heafy, Paolo Gregoletto	4:03<br>
+5.	"Unrepentant"	Corey Beaulieu	4:51<br>
+6.	"And Sadness Will Sear"	Heafy	3:34<br>
+7.	"Becoming the Dragon"	Heafy	4:43<br>
+8.	"To the Rats"	Gregoletto	3:42<br>
+9.	"This World Can't Tear Us Apart"	Heafy	3:30<br>
+10.	"Tread the Floods"	Beaulieu	3:33<br>
+11.	"Contempt Breeds Contamination"	Heafy	4:28<br>
+12.	"The Rising"	Gregoletto	3:45<br>
+13.	"The Crusade" (Instrumental)	Heafy	8:19<br>
+</p><br><br>
+<h1>Album Informations</h1>
+<p>
+Before the album was released, three songs from the album were released on the band's MySpace: "Detonation", "Anthem (We Are the Fire)", and "Entrance of the Conflagration". Music videos for "Entrance of the Conflagration", "Anthem (We Are the Fire)", "The Rising", "To the Rats", and "Becoming the Dragon" were produced and released on Roadrunner's website.
+
+In the United Kingdom, the album was released on October 9, and was certified silver in for sales in excess of 60,000 copies. The album peaked at number 7 in the UK. In the United States, the album debuted at No. 25 on the Billboard 200 albums chart on its release, selling 31,000 copies in the US in its first week. It has sold over 100,000 copies in the United States.
+
+The track "Detonation" is available on the Xbox 360 release of the video game Guitar Hero II as downloadable content while the track "Anthem (We Are the Fire)" is featured on Burnout Dominator, Sleeping Dogs and Saints Row 2.
+</p>
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content"  id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+
+window.onload = function() {
+var modal = document.getElementById('myModal');
+
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+}
+</script>
+
+
+
+<footer>
+	<p id = "footerLeft">&copy;2018 - All Rights Reserved, Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Trivium - Corey Beaulieu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>Corey Beaulieu</h1>
+<p>Corey King Beaulieu (born November 22, 1983) is the lead guitarist, of American heavy metal band Trivium. He also performs lead and backing screaming vocals for the band at live shows.</p>
+<img id="myImg" class="myImg" src="Images/Corey1.jpg" alt="Beaulieu performing in 2014" width="200px" height="300px" style="padding-bottom: 10px; padding-left: 2px;" /><br>Beaulieu performing in 2014
+<h2>Biography</h2>
+<p>Born in Dover-Foxcroft, Maine, Beaulieu is the second of two siblings in the Beaulieu family. His older sister, Sandy, lives in Maine and works with horses. He is of French-Canadian descent. Corey attended high school at Foxcroft Academy and played ice hockey. 
+Beaulieu began to play guitar at the age of 14, studying under Bill Pierce at Mark's Music in Brewer, Maine. His influences included Iron Maiden, Black Sabbath, Judas Priest, Dio, Manowar, Armored Saint, Ozzy Osbourne, King Diamond, Iced Earth, Megadeth, Slayer, Pantera, Skid Row, Motley Crue, Guns N' Roses and Metallica. 
+He was asked to join Trivium when he tried out for the band, after the release of their first album Ember to Inferno in 2003. Corey primarily plays Lead Guitar, but he occasionally shares lead/rhythm guitar duties with bandmate Trivium frontman Matt Heafy playing some of the lead and melody sections when performing live. He is also a primary supporting vocalist in Trivium.
+He performed backing vocals for Taking Dawn in 2010. Later, in 2011, Beaulieu performed guest vocals on Maine metal band Rebirth To End's song "The Weakness Randomization." 
+Beaulieu cites Yngwie Malmsteen, Tony Iommi, Adrian Smith, Glenn Tipton, Vivian Campbell, Joe Satriani, Steve Vai, Alex Skolnick, Kirk Hammett, Marty Friedman, Dave Mustaine, John Petrucci, Jeff Waters, Dimebag Darrell, Slash, and George Lynch as his primary influences.</p>
+<img id="myImg2" class="myImg" src="Images/Corey2.jpg" alt="Corey Beaulieu performing in Nova Rock Festival 2014." width="500px" height="400px" style="padding-bottom: 10px; padding-left: 2px;"/><br>Corey Beaulieu performing in Nova Rock Festival 2014.
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+window.onload = function() {
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var img2 = document.getElementById('myImg2');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+}
+</script>
+
+<footer>
+	<p id = "footerLeft">&copy;2018 - All Rights Reserved, Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>

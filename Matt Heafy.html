@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Trivium - Matt Heafy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>Matt Heafy</h1>
+<p>Matthew Kiichi Heafy (born January 26, 1986) is a Japanese American musician, best known as the rhythm guitarist and lead vocalist for the American heavy metal band Trivium. Heafy is also the lead vocalist for the band Capharnaum, along with Trivium's former producer Jason Suecof. He is also an avid gamer and practitioner of Brazilian Jiu-Jitsu. Matt streams daily on his Twitch channel KiichiChaosReigns playing video games, doing guitar clinics, vocal warm ups and showcasing his Brazilian jiu-jitsu classes.</p>
+<img id="myImg" class="myImg" src="Images/Matt1.JPG" alt="Matt Heafy at Nova Rock Festival 2014" width="300px" height="200px" style="padding-bottom: 10px; padding-left: 2px;" /><br>Matt Heafy at Nova Rock Festival 2014
+<h2>Biography</h2>
+<p>Heafy was born in Iwakuni, Japan to an American father and a Japanese mother. His father, formerly a member of the United States Marine Corps, is half-Irish and half-German. Although Heafy was born in Japan, he lived there for only one year. He does not speak Japanese fluently; however, he has mastered some of the basic phrases and uses them when he performs in Japan.  His family then moved to Orlando, Florida, where he currently resides. Heafy attended Lake Brantley High School. He completed his senior year while also touring in Europe, and graduated in 2004. During those years, Heafy used to live a straight edge lifestyle. Heafy also has a younger sister who does covers of video game music on her YouTube channel.
+Heafy learned to play the tenor saxophone in years leading up to becoming more serious on guitar at the age of eleven. At that period he was mostly listening to pop punk bands and even auditioned for a local one called "Freshly Squeezed" by playing the Blink-182 song Dammit. However, following his audition, he never got a follow-up call back. He also cites being introduced to heavy metal by his classmate, David, who gave him a copy of Metallica's self-titled album. 
+Heafy does not know formal music theory and was almost completely self-taught. He does know how to read sheet music, but can only apply it on the saxophone. However, in 2015, he started taking formal training for the guitar. 
+"Self-taught for quite a bit of it, did lessons on and off for maybe two or three years, but I do not know anything formal music on guitar. I do on saxophone though…but that doesn’t help me on guitar." 
+On January 10, 2010, Heafy married Ashley Howard in Orlando, Florida. The wedding was attended by close friends and family.
+Matt still often uses the same first Gibson Les Paul he got from his father, but only in studio settings. For live performances he uses his signature Epiphone Les Paul that is modeled off of his Gibson.
+</p>
+<img id="myImg2" class="myImg" src="Images/Matt2.jpg" alt="Matt Heafy performing live." width="300px" height="400px" style="padding-bottom: 10px; padding-left: 2px;"/><br>Matt Heafy performing live.
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+window.onload = function() {
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var img2 = document.getElementById('myImg2');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+}
+</script>
+
+
+<footer>
+	<p id = "footerLeft">&copy;2018 - All Rights Reserved, Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>

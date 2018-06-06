@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>Trivium - Ascendancy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>Ascendancy(2005)</h1>
+<img id="myImg" class="myImg" src="Images/Ascendancy.jpg" alt="Ascendancy" width="200px" height="200px" style="padding-bottom: 10px; padding-right: 1%;" />
+<p>1.	"The End of Everything" (Instrumental)	Heafy, Jason Suecof	1:20<br>
+	2.	"Rain"	Heafy, Corey Beaulieu	4:11<br>
+	3.	"Pull Harder on the Strings of Your Martyr"	Heafy, Beaulieu, Travis Smith	4:51<br>
+	4.	"Drowned and Torn Asunder"	Heafy, Beaulieu	4:17<br>
+	5.	"Ascendancy"	Heafy	4:25<br>
+	6.	"A Gunshot to the Head of Trepidation"	Heafy, Beaulieu	5:55<br>
+	7.	"Like Light to the Flies"	Heafy, Beaulieu	5:40<br>
+	8.	"Dying in Your Arms"	Heafy	2:53<br>
+	9.	"The Deceived"	Heafy, Beaulieu	5:11<br>
+	10.	"Suffocating Sight"	Heafy	3:47<br>
+	11.	"Departure"	Heafy	5:41<br>
+	12.	"Declaration"	Heafy	7:00<br>
+</p><br><br>
+<h1>Album Informations</h1>
+<p>
+This marks the first Trivium album to feature guitarist Corey Beaulieu and bassist Paolo Gregoletto. The album was produced by Jason Suecof and frontman, Matt Heafy. The album spawned four singles in "Like Light to the Flies", "Pull Harder on the Strings of Your Martyr", "A Gunshot to the Head of Trepidation" and "Dying in Your Arms". Music videos for each of the songs were shot; a promotional video was filmed for the song "Rain".
+
+A demo of the song "The Deceived" was included on the re-release of Trivium's debut album Ember to Inferno nearly a year before Ascendancy was released. Likewise, a demo version of "Like Light to the Flies" was included on the MTV compilation album Headbangers Ball Volume 2. Also, a demo of the song "Blinding Tears Will Break the Skies" was included on the Ember to Inferno re-release and later re-recorded and included as a bonus track on the re-release of Ascendancy.
+
+Speaking to Kerrang! about the songs lyrics, Matt Heafy said: "Definitely, some of the lyrics are about my personal insecurities and my social issues and disorders, and there's a thing about quietness in the music industry – people assume you're a dickhead if you don't want to talk, and that was definitely said about me. Being in a band forced me to have to get over my awkwardness around people and you can really see what I was going through in there." Heafy considers Ascendancy his favorite Trivium album.
+</p>
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+window.onload = function() {
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+}
+</script>
+
+
+
+<footer>
+	<p id = "footerLeft">&copy;2018 - All Rights Reserved, Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>

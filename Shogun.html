@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Trivium - Shogun</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="Images/icon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+<img src="Images/logo.png"  width="20%" height="20%" />
+</div>
+
+<nav class="main">
+	<ul>
+		<li><a href = "index.html">Home</a><li>
+		<li><a href = "Biography.html">Biography</a></li>
+		<li class="members"><a href = "Members.html">Members</a>
+			<ul>
+				<li><a href = "Matt Heafy.html">Matt Heafy</a></li>
+				<li><a href = "Corey Beaulieu.html">Corey Beaulieu</a></li>
+				<li><a href = "Paolo Gregoletto.html">Paolo Gregoletto</a></li>
+				<li><a href = "Alex Bent.html">Alex Bent</a></li>
+			</ul>
+		</li>
+		<li><a href = "Discography.html">Discography</a>
+			<ul>
+				<li><a href = "Ember to Inferno.html">Ember to Inferno</a></li>
+				<li><a href = "Ascendancy.html">Ascendancy</a></li>
+				<li><a href = "The Crusade.html">The Crusade</a></li>
+				<li><a href = "Shogun.html">Shogun</a></li>
+				<li><a href = "In Waves.html">In Waves</a></li>
+				<li><a href = "Vengeance Falls.html">Vengeance Falls</a></li>
+				<li><a href = "Silence in the Snow.html">Silence in the Snow</a></li>
+				<li><a href = "The Sin and the Sentence.html">The Sin and the Sentence</a></li>
+			</ul>
+		</li>
+		<li><a href = "Media.html">Media</a></li>
+		<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<nav class="sub">
+<span class ="a">
+<h1 id="title" >Trivium</h1>
+</span>
+<button class="button" onclick="myFunction()" style="float: right; margin-top: 10px; margin-right: 10px;" name="menu" value="menu"><div id="menuicon"></div><div id="menuicon"></div><div id="menuicon"></div></button>
+</nav>
+
+<div id="submenu">
+	<ul>
+	<li><a href = "index.html">Home</a><li>
+	<li><a href = "Biography.html">Biography</a></li>
+	<li class="members"><a href = "Members.html">Members</a></li>
+	<li><a href = "Discography.html">Discography</a></li>
+	<li><a href = "Media.html">Media</a></li>
+	<li><a href = "Tour Dates.html">Tour Dates</a></li>
+	</ul>
+</div>
+
+<script>
+	function myFunction() {
+	var x = document.getElementById("submenu");
+    if (x.style.display == "block") {
+			x.style.display = "none";
+		} else {
+            x.style.display = "block";
+		}
+	}
+
+</script>
+
+<div id = "mainCont">
+<h1>Shogun(2008)</h1>
+<img id="myImg" class="myImg" src="Images/Shogun.jpg" alt="Shogun" width="200px" height="200px" style="padding-bottom: 10px; padding-right: 1%;" />
+<p>1.	"Kirisute Gomen"	6:28<br>
+2.	"Torn Between Scylla and Charybdis"	6:49<br>
+3.	"Down from the Sky"	5:35<br>
+4.	"Into the Mouth of Hell We March"	5:52<br>
+5.	"Throes of Perdition"	5:54<br>
+6.	"Insurrection"	4:57<br>
+7.	"The Calamity"	4:58<br>
+8.	"He Who Spawned the Furies"	4:08<br>
+9.	"Of Prometheus and the Crucifix"	4:40<br>
+10.	"Like Callisto to a Star in Heaven"	5:25<br>
+11.	"Shogun"	11:55
+</p><br><br>
+<h1>Album Informations</h1>
+<p>
+Shogun largely features a continuation of the thrash metal style featured on The Crusade, however, it also marks the return of Matt Heafy's screaming vocals and is also the band's first album produced by Nick Raskulinecz. In an interview for About.com, Heafy described the album's musical direction as a combination of various aspects including: "the past, present, and future of Trivium, all on one CD" and that is the "next evolutionary step". When asked about the change in his singing style, he said: "It’s the kind of thing that happened naturally." Shogun heavily features 7-string guitars and 5-string bass guitars, which had been used sparingly on The Crusade.
+
+The group did not want to make an album where all songs had the same singing style, like in The Crusade, and decided to just let their music flow naturally and unbiased. Unlike The Crusade, which had some songs focusing on famous and controversial murders/crimes, this album has a few songs that deal with ancient Japanese military customs and several regarding Greek mythology, some serving as metaphors to be interpreted by the listener. "Into the Mouth of Hell We March" and "Torn Between Scylla and Charybdis" detail the story of Odysseus choosing whether to face the giant whirlpool Charybdis or the 6-headed monster Scylla. "He Who Spawned the Furies" is about the Titan Cronus devouring his children and castrating his father Uranus, creating Aphrodite and the Erinýes (the Furies). "Of Prometheus and the Crucifix" references the daily torment of Prometheus and alludes to crucifixion of Jesus Christ, serving as a metaphor for enduring torment by the public for daring to contribute something new to society. "Like Callisto to a Star in Heaven" is written from the perspective of the nymph Callisto, detailing her rape and impregnation by Zeus and her transformations into a bear and into Ursa Major. "Down from the Sky" features a contemporary theme, chastising those who spark wars for profit or religion, and warning of nuclear holocaust.
+</p>
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+window.onload = function() {
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+}
+</script>
+
+
+<footer>
+	<p id = "footerLeft">Copyright by Norgand</p>
+	<ul id = "footerRight">
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>		
+</footer>
+
+<div class="subfooter">
+	<ul>
+			<li><a href = "Contact Us.html">Contact Us</a></li>
+			<li><a href = "Site Map.html">Sitemap</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href = "About.html">About</a></li>
+	</ul>	
+	<p style="padding-left: 20px;">&copy;2018 - All Rights Reserved, Norgand</p>
+</div>
+
+</body>
+
+</html>
